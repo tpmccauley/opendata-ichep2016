@@ -18,8 +18,20 @@
 				background-color: #f0f0f0;
 			}
 
+			html:-webkit-full-screen-ancestor {
+        background-color: #f0f0f0;
+    	}
+
+    	html:-moz-full-screen-ancestor {
+        background-color: #f0f0f0;
+    	}
+
 			.reveal {
 				color: #67615c;
+			}
+
+			.reveal .white {
+				color: #ffffff;
 			}
 
 			.reveal a {
@@ -28,6 +40,10 @@
 
 			.reveal a:hover {
 				color: #efdcdc;
+			}
+
+			.reveal a:hover img {
+				border-color: #efdcdc;
 			}
 
 			.reveal .controls .navigate-left,
@@ -75,6 +91,16 @@
 				color: #800000;
 			}
 
+			.reveal .white h3 {
+				color: #ffffff;
+			}
+
+			.reveal .progress span {
+				background: #6d0000;
+				-webkit-transition: width 800ms cubic-bezier(0.5, 0.0, 0.0, 0.985);
+				-moz-transition: width 800ms cubic-bezier(0.5, 0.0, 0.0, 0.985);
+				transition: width 800ms cubic-bezier(0.5, 0.0, 0.0, 0.985); }
+			}
 		</style>
 
 		<!-- Printing and PDF exports -->
@@ -96,6 +122,7 @@
 					<div>
           	<p style="color:black">Thomas McCauley</a>
           	<p><a href="http://cern.ch/mccauley" target="_blank">thomas.mccauley@cern.ch</a></p>
+						<!-- <p><a href="http://cern.ch/mccauley" target="_blank">@tpmccauley</a></p> -->
           	<p>University of Notre Dame, USA</p>
 						<p>for the ATLAS and CMS Collaborations</p>
         	</div>
@@ -105,15 +132,187 @@
 				</section>
 
 				<section>
-					<h3>What?</h3>
+					<section>
+						<h3>What?</h3>
+					</section>
+					<section>
+						<ul>
+							<li>Level 1: data directly related to publications</li>
+							<li>Level 2: simplified data formats suitable for education and outreach</li>
+							<li>Level 3: “analysis-level” reconstructed data, simulation, and software</li>
+							<li>Level 4: raw data and associated software</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
-					<h3>Why?</h3>
+					<section>
+						<h3>Why?</h3>
+						<p>Benefits for the experiments and the public</p>
+						<ul>
+							<li>Education</li>
+							<li>Public engagement</li>
+							<li>Data and analysis preservation</li>
+							<li>Physicists</li>
+							<li>Data scientists</li>
+						</ul>
+					</section>
+
+					<section>
+						<a target="_blank" href="http://press.web.cern.ch/press-releases/2014/11/cern-makes-public-first-data-lhc-experiments">
+							<img src="img/press1.png"></img>
+						</a>
+					</section>
+
+				</section>
+
+				<section>
+					<h3>Who?</h3>
+				</section>
+
+				<section>
+					<section>
+						<h3>A bit of history...</h3>
+					</section>
+					<section class="white" data-background="img/05Pic_AnNajah.JPG">
+						<h3>Open data and masterclasses</h3>
+						<p>
+							The first and most enduring use of public data from the LHC is
+							education. For example, since 200X data from the four LHC experiments has been used
+							in the <a style="color:white;" href="http://physicsmasterclasses.org/" target="_blank">international masterclasses</a>
+							conducted under the auspices of the International Particle Physics Outreach Group
+							and organized by TU Dresden and QuarkNet.
+						</p>
+						<p>
+						</p>
+					</section>
+					<section class="white" data-background="img/amCharts.png">
+						<h3>2016 International Masterclasses</h3>
+						<ul>
+							<li>11 February - 23 March</li>
+							<li>276 masterclasses</li>
+							<li>13k students</li>
+							<li>46 institutes</li>
+							<li>213 countries</li>
+						</ul>
+						<p>The success of such programs as the masterclasses was one of the favorable factors considered by the LHC experiments
+							when further data releases and open-access policies were considerered.
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<h3>Challenges</h3>
+					<p>
+						"Making the data public does not make them any simpler".
+					</p>
+					<p>
+					 	In order to make it useful and use-able for the public several challenges have to be overcome:
+					</p>
+					<ul>
+						<li>Data volume: datasets of up to hundreds of terabytes is a lot to handle and releases will only get larger </li>
+						<li>Data complexity: reflects the complexity of the experiments themselves</li>
+						<li>Software environment: large, bespoke software frameworks are required to read and analyze data</li>
+						<li>Physics knowledge needed: in an experiment those analyzing data either have or are working towards a PhD in physics</li>
+					</ul>
 				</section>
 
 				<section>
 					<h3>How?</h3>
+					<p>
+						The details of how ATLAS and CMS responded to these challenges can and do differ but in general
+						the following common approaches were used:
+					</p>
+					<ul>
+						<li>Provide access and analysis at different levels</li>
+						<li>Where possible and applicable provide simplified datasets</li>
+						<li>Provide good documentation</li>
+						<li>Make example analysis code available</li>
+						<li>Allow for analysis and visualization via the browser: e.g. histograms, event display</li>
+						<li>Provide virtual machines with software environment</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>CMS</h3>
+					<ul>
+						<li>Nov 2014: half of 2010 pp collision data at $\sqrt{s} =$ 7 TeV, 27 TB in size, equivalent to tens of $\mathrm{pb^{-1}}$</li>
+						<li>April 2016: half of 2011 pp collision data at $\sqrt{s} =$ 7 TeV, 100 TB in size, equivalent to ~ 2.5 $\mathrm{fb^{-1}}$, along with 200 TB of Monte Carlo samples</li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>ATLAS</h3>
+					<ul>
+						<li>1 $\mathrm{fb^{-1}}$ of 2012 pp collision data at $\sqrt{s} =$ 8 TeV and Monte Carlo</li>
+						<li>ROOT TTree format</li>
+						<li>Interactive visualization and analysis tools via browser</li>
+						<li>ROOT + Jupyter notebooks</li>
+						<li>python-based analysis framework code</li>
+						<li>Several VMs</li>
+						<li>ATLAS open data website</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h3>CERN Open Data Portal</h3>
+						<p><a href="http://opendata.cern.ch" target="_blank">http://opendata.cern.ch</a></p>
+					</section>
+					<section data-background="img/codp-main.png"></section>
+					<section data-background="img/codp-education.png"></section>
+					<section data-background="img/codp-research.png"></section>
+				</section>
+
+				<section>
+					<section>
+						<img src="img/record1.png"></img>
+					</section>
+					<section>
+						<img src="img/record2.png"></img>
+					</section>
+					<section>
+						<img src="img/record3.png"></img>
+					</section>
+					<section>
+						<img src="img/record4.png"></img>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h3>ATLAS Open Data Page</h3>
+						<p><a href="http://atlasopendata.web.cern.ch" target="_blank">http://atlasopendata.web.cern.ch</a></p>
+					</section>
+					<section data-background="img/aod-main.png"></section>
+					<section data-background="img/aod-1.png"></section>
+					<section data-background="img/aod-2.png"></section>
+					<section data-background="img/aod-3.png"></section>
+				</section>
+
+
+				<section>
+					<h3>Impact</h3>
+				</section>
+
+				<section>
+					<h3>Future plans</h3>
+					<p>ATLAS</p>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<p>CMS</p>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
 				</section>
 
 				<section>
@@ -122,8 +321,12 @@
 						<li>ATLAS Collaboration</li>
 						<li>CMS Collaboration</li>
 						<li>CERN Scientific Information Services</li>
-						<li>CERN IT</li>
+						<li>CERN Invenio team</li>
 					</ul>
+				</section>
+
+				<section data-background-iframe="bg.html">
+					<h3 style="color:white;">Thank you</h3>
 				</section>
 
 			</div>
@@ -141,6 +344,7 @@
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/math/math.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
