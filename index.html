@@ -133,28 +133,47 @@
 
 				<section>
 					<section data-background-image="img/bg1.png">
+						<h3 style="color:white;">Who?</h3>
+					</section>
+					<section>
+						<h3>ATLAS and CMS</h3>
+						<a href="http://cms-results.web.cern.ch/cms-results/public-results/publications/HIG-15-002/index.html" target="_blank">
+						<img style="border:0; float:right; width:350px; background:none; margin:0;" src='img/atlas-cms-combo.png'></img>
+						</a>
+						<ul>
+							<li>...</li>
+							<li>...</li>
+							<li>...</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section data-background-image="img/bg1.png">
 						<h3 style="color:white;">What?</h3>
 					</section>
 
+					<!--
 					<section class="white" data-background="img/cms_0.jpeg">
 						<h3>CMS</h3>
 					</section>
 					<section>
 						[More to add on CMS]
 					</section>
-
+					-->
 					<!--
 					<section>
 						<img style="border:0; float:right; width:500px; background:none; margin:0;" src='img/cms_120918_03.png'></img>
 					</section>
 					-->
-
+					<!--
 					<section data-background="img/atlas.jpeg">
 						<h3>ATLAS</h3>
 					</section>
 					<section>
 						[More to add on ATLAS]
 					</section>
+					-->
 
 					<section>
 						<h4>ATLAS and CMS have adopted open-access policies, both of which use common notions of levels of access to data:</h4>
@@ -182,6 +201,12 @@
 				<section>
 					<section data-background-image="img/bg2.png">
 						<h3 style="color:white;">Why?</h3>
+					</section>
+
+					<section>
+						<a target="_blank" href="http://press.web.cern.ch/press-releases/2014/11/cern-makes-public-first-data-lhc-experiments">
+							<img src="img/press1.png"></img>
+						</a>
 					</section>
 
 					<section>
@@ -229,12 +254,6 @@
 						</ul>
 					</section>
 
-					<section>
-						<a target="_blank" href="http://press.web.cern.ch/press-releases/2014/11/cern-makes-public-first-data-lhc-experiments">
-							<img src="img/press1.png"></img>
-						</a>
-					</section>
-
 				</section>
 
 				<section>
@@ -248,7 +267,7 @@
 							education. For example, since 200X data from the four LHC experiments has been used
 							in the <a style="color:white;" href="http://physicsmasterclasses.org/" target="_blank">international masterclasses</a>
 							conducted under the auspices of the International Particle Physics Outreach Group
-							and organized by TU Dresden and QuarkNet.
+							and organized by TU Dresden and <a style="color:white;" href="https://quarknet.i2u2.org/" target="_blank">QuarkNet</a>.
 						</p>
 						<p>
 						</p>
@@ -269,23 +288,24 @@
 				</section>
 
 				<section>
-					<h3>Challenges</h3>
-					<p><q>"Making the data public does not make them any simpler".</q></p>
-					<h4>
-					 	In order to make it useful and use-able for the public several challenges have to be overcome:
-					</h4>
-					<ul>
-						<li>Data volume: datasets of up to hundreds of terabytes is a lot to handle and releases will only get larger </li>
-						<li>Data complexity: reflects the complexity of the experiments themselves</li>
-						<li>Software environment: large, bespoke software frameworks are required to read and analyze data; not-inconsiderable software skill is needed as well</li>
-						<li>Physics knowledge needed: in an experiment those analyzing data either have or are working towards a PhD in physics</li>
-					</ul>
-				</section>
-
-				<section>
 					<section data-background-image="img/bg3.png">
 						<h3 style="color:white;">How?</h3>
 					</section>
+
+					<section>
+						<h3>Challenges</h3>
+						<p><q>"Making the data public does not make them any simpler".</q></p>
+						<h4>
+							In order to make it useful and use-able for the public several challenges have to be overcome:
+						</h4>
+						<ul>
+							<li>Data volume: datasets of up to hundreds of terabytes is a lot to handle and releases will only get larger </li>
+							<li>Data complexity: reflects the complexity of the experiments themselves</li>
+							<li>Software environment: large, bespoke software frameworks are required to read and analyze data; not-inconsiderable software skill is needed as well</li>
+							<li>Physics knowledge needed: in an experiment those analyzing data either have or are working towards a PhD in physics</li>
+						</ul>
+					</section>
+
 					<section>
 						<h4>
 							The details of how ATLAS and CMS responded to these challenges can and do differ but in general
@@ -302,32 +322,33 @@
 					</section>
 				</section>
 
-				<section>
-					<h3>CMS data and tools (the details)</h3>
-					<ul>
-						<li>Nov 2014: half of 2010 pp collision data at $\sqrt{s} =$ 7 TeV released, 27 TB in size, equivalent to tens of $\mathrm{pb^{-1}}$</li>
-						<li>April 2016: half of 2011 pp collision data at $\sqrt{s} =$ 7 TeV released, 100 TB in size, equivalent to ~ 2.5 $\mathrm{fb^{-1}}$, along with 200 TB of Monte Carlo samples</li>
-						<li>Data and tools available via CERN Open Data Portal</li>
-						<li>Primary datasets are released in CMS ROOT analysis-object-data format</li>
-						<li>Derived (i.e. reduced) datasets in csv, JSON, etc.</li>
-						<li>Extensize documentation includes data validation, trigger, and detector condition information as well as analysis code examples</li>
-						<li>Virtual machines with CMS software environments needed for analysis</li>
-						<li>Data is stored in EOS and can be downloaded directly or accessed via XRootD</li>
-					</ul>
+				<section class="white" data-background="img/cms_0.jpeg">
+					<h3>CMS</h3>
 				</section>
 
 				<section>
-					<h3>ATLAS data and tools (the details)</h3>
-					<ul>
-						<li>1 $\mathrm{fb^{-1}}$ of 2012 pp collision data at $\sqrt{s} =$ 8 TeV and Monte Carlo</li>
-						<li>Data and tools available from ATLAS Data Portal</li>
-						<li>ROOT TTree format</li>
-						<li>Interactive visualization and analysis tools via browser</li>
-						<li>ROOT + Jupyter notebooks</li>
-						<li>python-based analysis framework code</li>
-						<li>Virtual machines with software available</li>
-						<li>Data and tools: ~14 GB; all can fit on a USB stick</li>
-					</ul>
+					<section>
+						<h3>CMS data and tools</h3>
+						<ul>
+							<li>Intended audience: all levels of the public</li>
+							<li>There is therefore a spectrum of levels of access and complexity</li>
+							<li>Also attempt to address issues of data cataloging, validation, and preservation</li>
+							<li>Data and tools available via CERN Open Data Portal</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>CMS data and tools (the details)</h3>
+						<ul>
+							<li>Nov 2014: half of 2010 pp collision data at $\sqrt{s} =$ 7 TeV released, 27 TB in size, equivalent to tens of $\mathrm{pb^{-1}}$</li>
+							<li>April 2016: half of 2011 pp collision data at $\sqrt{s} =$ 7 TeV released, 100 TB in size, equivalent to ~ 2.5 $\mathrm{fb^{-1}}$, along with 200 TB of Monte Carlo samples</li>
+							<li>Primary datasets are released in CMS AOD (analysis-object-data) ROOT format</li>
+							<li>Derived (i.e. reduced) datasets in csv, JSON, and CMS PAT (Physics Analysis Tool) ROOT format</li>
+							<li>Extensize documentation includes data validation, trigger, and detector condition information as well as analysis code examples</li>
+							<li>Virtual machines with CMS software environments needed for analysis</li>
+							<li>Data is stored in EOS and can be downloaded directly or accessed via XRootD</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
@@ -349,24 +370,23 @@
 					<section data-background="img/codp-main.png"></section>
 					<section data-background="img/codp-education.png"></section>
 					<section>
-						<img src="img/ispy.png"></img>
+						<a href="http://opendata.cern.ch/visualise/events/CMS" target="_blank">
+							<img src="img/ispy.png"></img>
+						</a>
 					</section>
 					<section>
-						<img src="img/hist.png"></img>
+						<img src="img/cms-derived.png" style="width:75%;"></img>
+						<p>
+							Recently high school teachers as part of the <a href="https://indico.cern.ch/event/507180/timetable/#day-2016-07-21" target="_blank">CERN High School Teacher program</a>
+							successfully used CMS derived data to come up with exercises for the high-school level
+						</p>
 					</section>
 					<section data-background="img/codp-research.png"></section>
 					<section>
 						<img src="img/record1.png"></img>
 						<p>
-							Data are identified with persistent, citable digital object identifiers (DOI).
-						</p>
-					</section>
-					<section>
-						<img src="img/record4.png"></img>
-						<p>
-							Data released under the
-							<a href="http://creativecommons.org/publicdomain/zero/1.0">Creative Commons CC0 waiver</a>
-							: essentially releasing it into the public domain
+							Data are identified with persistent, citable digital object identifiers (DOI) and are released under the
+							<a href="http://creativecommons.org/publicdomain/zero/1.0">Creative Commons CC0 waiver</a>, essentially releasing it into the public domain.
 						</p>
 					</section>
 					<section>
@@ -393,7 +413,36 @@
 					<section>
 						<img src="img/valid2.png"></img>
 					</section>
+				</section>
 
+				<section data-background="img/atlas.jpeg">
+					<h3>ATLAS</h3>
+				</section>
+
+				<section>
+					<section>
+						<h3>ATLAS data and tools</h3>
+						<ul>
+							<li>Initial focus: undergraduate and postgraduate students (but eventually to expand target audience)</li>
+							<li>Within this scope, provide access at 3 levels: from visualizations, to web analysis, to more complex analysis</li>
+							<li>Data and tools available via the ATLAS Open Data Page: released on X July, just Y days ago!</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>ATLAS data and tools (the details)</h3>
+						<ul>
+							<li>1 $\mathrm{fb^{-1}}$ of 2012 pp collision data at $\sqrt{s} =$ 8 TeV and Monte Carlo</li>
+							<li>Datasets: Electron/gamma and muon</li>
+							<li>ROOT TTree format</li>
+							<li>Interactive visualization and analysis tools via browser</li>
+							<li>ROOT + Jupyter notebooks</li>
+							<li>python-based analysis framework code</li>
+							<li>Virtual machines with software available</li>
+							<li>Data and tools: ~14 GB; all can fit on a USB stick</li>
+							<li>Data and VMs also made availbale via CERN Open Data Portal</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
@@ -401,55 +450,37 @@
 						<h3>ATLAS Open Data Page</h3>
 						<p><a href="http://atlasopendata.web.cern.ch" target="_blank">http://atlasopendata.web.cern.ch</a></p>
 					</section>
-					<section>
-						<ul>
-							<li>Expected audience: university students</li>
-							<li>Aim is to provide data and tools at various levels of complexity: from visualizations, to web analysis, to more complex analysis</li>
-							<li>...</li>
-						</ul>
-					</section>
-					<section data-background="img/aod-main.png"></section>
-					<section data-background="img/aod-1.png"></section>
+					<section data-background="img/aod-main.png" data-background-size="100%"></section>
+					<section data-background="img/aod-1.png" data-background-size="100%"></section>
 					<section>
 						<img src="img/aod-1a.png"></img>
 					</section>
 					<section>
-						<img src="img/aod-root.png"></img>
+						<img src="img/aod-hist.png" style="width:60%;"></img>
+						<p>
+							Explore correlations between variables in the datasets
+						</p>
 					</section>
-					<section data-background="img/aod-2.png"></section>
+					<section data-background="img/aod-2.png" data-background-size="100%"></section>
 					<section>
 						<img src="img/aod-2a.png"></img>
 					</section>
 					<section>
 						<img src="img/aod-notebooks.png"></img>
+						<p>
+							C++ and python notebooks available for various analyses: $\mathrm{W}$, $\mathrm{Z}$, $\mathrm{t\bar{t}}$, $\mathrm{WZ}$, $\mathrm{ZZ}$, $\mathrm{H \rightarrow WW}$, $\mathrm{Z^{'}}$
+						</p>
 					</section>
-					<section data-background="img/aod-3.png"></section>
+					<section data-background="img/aod-3.png" data-background-size="100%"></section>
 					<section>
 						<img src="img/aod-3a.png"></img>
 					</section>
           <section>
-<pre><code data-trim data-noescape>
-import ROOT
-import time
-
-import TupleReader as reader
-import HistManager
-import EventCounter
-
-class Analysis(object):
-    """Baseclass for all analyses. Common functionality should go here.
-    This class handles some of the technicalities that are common to all analyses.
-    """
-
-    def __init__(self, auxName):
-        super(Analysis, self).__init__()
-        # Configurables
-        self.Name         = type(self).__name__
-        self.TotName      = auxName + "." + self.Name
-        self.isData       = False
-			</section>
-</pre></code>
-					<section data-background="img/aod-comm.png"></section>
+						<a href="https://github.com/atlas-outreach-data-tools/atlas-outreach-data-tools-framework" target="_blank">
+							<img src="img/atlas-github.png"></img>
+						</a>
+					</section>
+					<section data-background="img/aod-comm.png" data-background-size="100%"></section>
 				</section>
 
 				<section>
